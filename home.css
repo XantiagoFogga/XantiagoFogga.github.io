@@ -1,0 +1,124 @@
+/* home.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f0f8ff;
+  background-image: url('https://via.placeholder.com/1500x1000/ffe6e6/ffffff?text=Fondo+Romantico');
+  background-size: cover;
+  color: #333;
+}
+
+header {
+  background: rgba(255,182,193,0.9);
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffebcd;
+}
+
+main {
+  padding: 2em;
+  background: rgba(255,255,255,0.8);
+  margin: 2em auto;
+  width: 90%;
+  max-width: 800px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 2em;
+  animation: slideIn 1s ease-out;
+}
+
+.welcome h2 {
+  color: #ff69b4;
+}
+
+.heart {
+  width: 150px;
+  height: 150px;
+  background-image: url('late.jpg');
+  background-size: cover;
+  margin: 1em auto;
+  cursor: pointer;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.reasons, .special-moments {
+  margin-bottom: 2em;
+  animation: fadeIn 2s ease;
+}
+
+.reasons ul {
+  list-style-type: disc;
+  padding-left: 1.5em;
+}
+
+footer {
+  background: rgba(255,182,193,0.9);
+  text-align: center;
+  padding: 1em;
+  position: sticky;
+  bottom: 0;
+}
+
+button {
+  padding: 0.6em 1.2em;
+  border: none;
+  border-radius: 10px;
+  background: #ff69b4;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #ff1493;
+}
+
+@keyframes slideIn {
+  from { transform: translateY(-20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

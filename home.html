@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Amor para Ti</title>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <header>
+    <h1>Para Mi niña hermosa</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="reasons.html">Por que?</a></li>
+        <li><a href="letter.html">Carta</a></li>
+        <li><a href="poems.html">Poemas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="welcome">
+      <h2>Bienvenida, <span id="userName"></span>!</h2>
+      <p>Hola mi niña hermosa, muy buenos dias, tardes o noches, espero que estes bien. Si recuerdas, hace poco te dije que te iba a hacer una sorpresa, y pues esta es la sorpresa, espero te guste mucho, la hice con todo mi corazon, </br> todo esto que vas a leer, es sacado desde mi corazon, desde mis mas profundos pensamientos y sentimientos que tengo por ti, aqui te dire todo lo que siento por ti, o por lo menos la gran mayoria de cosas que siento por ti,</br>
+ cosas que nunca te pude decir por pena y cosas que quiero que sepas, asi que, espero que te guste, y espero que quede claro todo lo que siento por ti. </br></br> Te ama: Santiago</p>
+      <div class="heart" title="Te amo!" onclick="heartClicked()"></div>
+    </section>
+        </section>
+    <section class="special-moments">
+      <h2>Antes que nada</h2>
+      <p>Antes que nada, te hice una pequeña playlist, si quieres puedes escucharla mientras que ves esto, o despues, o no escucharla jajaja</br></p>
+<a href="https://open.spotify.com/playlist/5l0ecP3tCoRCYlUzsiOQqo?si=f42a7bb3fd794ef4">Playlist</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mi Amor para Ti</p>
+    <button onclick="logout()">Cerrar Sesión</button>
+  </footer>
+  <script>
+    window.onload = function() {
+      var username = localStorage.getItem('username') || 'Amor';
+      document.getElementById('userName').innerText = username;
+    };
+
+    function logout() {
+      localStorage.clear();
+      window.location.href = 'index.html';
+    }
+    
+    function heartClicked() {
+      // Interacción simple: al hacer clic en el corazón se muestra un mensaje y se podría agregar más animación
+      alert("¡Te amo más que a nada en el mundo!");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carta de Amor</title>
+  <link rel="stylesheet" href="letter.css">
+</head>
+<body>
+  <header>
+    <h1>Carta de Amor</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="reasons.html">Por que?</a></li>
+        <li><a href="letter.html">Carta</a></li>
+        <li><a href="poems.html">Poema</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <article class="letter">
+      <p class="line">Querida Mely,</p>
+      <p class="line">Desde el primer instante en que te vi,</p>
+      <p class="line">supe que había encontrado a mi alma gemela.</p>
+      <p class="line">Aunque la distancia se interponga entre nosotros,</p>
+      <p class="line">cada pensamiento sobre ti llena mi corazón de esperanza y alegría.</p>
+      
+      <p class="line">A lo largo de estos días en los que nos separan kilómetros,</p>
+      <p class="line">he aprendido a valorar cada detalle de nuestra conexión.</p>
+      <p class="line">Las largas conversaciones en las noches,</p>
+      <p class="line">donde compartimos nuestras alegrías, miedos y sueños,</p>
+      <p class="line">me recuerdan que nuestro amor trasciende cualquier barrera física.</p>
+      
+      <p class="line">A veces, al mirar el horizonte,</p>
+      <p class="line">siento que estás a mi lado.</p>
+      <p class="line">Esa sensación mágica me impulsa a seguir adelante,</p>
+      <p class="line">a pesar de la espera y la añoranza.</p>
+      <p class="line">Cada mensaje, cada llamada,</p>
+      <p class="line">se convierte en un puente que acorta la distancia y me acerca a ti,</p>
+      <p class="line">aunque sea en el alma.</p>
+
+      <p class="line">Extraño profundamente la calidez de tus abrazos,</p>
+      <p class="line">y el sonido de tu risa.</p>
+      <p class="line">Cada noche, al despedirme,</p>
+      <p class="line">imagino el momento en que la distancia se acabe</p>
+      <p class="line">y podamos fundirnos en un abrazo eterno.</p>
+      
+      <p class="line">La soledad se torna en esperanza,</p>
+      <p class="line">porque sé que pronto, ese reencuentro será realidad.</p>
+
+      <p class="line">Este tiempo separados me ha enseñado</p>
+      <p class="line">a valorar cada instante que compartimos.</p>
+      <p class="line">La espera se vuelve más dulce</p>
+      <p class="line">al saber que cada día sin ti</p>
+      <p class="line">es solo un paso más hacia el momento en que, finalmente,</p>
+      <p class="line">nuestras manos se vuelvan a entrelazar</p>
+      <p class="line">y nuestros corazones latan al unísono.</p>
+
+      <p class="line">La distancia, aunque desafiante,</p>
+      <p class="line">ha fortalecido mi amor por ti.</p>
+      <p class="line">Cada pequeño detalle tuyo,</p>
+      <p class="line">tu voz, tu sonrisa,</p>
+      <p class="line">la pasión con la que vives la vida,</p>
+      <p class="line">se ha vuelto un motivo de inspiración</p>
+      <p class="line">que ilumina mis días</p>
+      <p class="line">y me hace sentir que, a pesar de todo,</p>
+      <p class="line">el amor verdadero siempre encuentra su camino.</p>
+
+      <p class="line">Gracias por ser mi compañera en este viaje,</p>
+      <p class="line">por brindarme fuerza en los momentos difíciles,</p>
+      <p class="line">y por enseñarme que el verdadero amor no conoce límites.</p>
+
+      <p class="line">Espero con ansias el día en que la espera termine,</p>
+      <p class="line">y podamos compartir sin reservas</p>
+      <p class="line">cada uno de nuestros sueños.</p>
+
+      <p class="line signature">Con todo mi amor,</p>
+      <p class="line signature">Santiago</p>
+    </article>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mi Amor para Ti</p>
+  </footer>
+  <script>
+    // Se aplica el efecto de máquina de escribir a cada línea
+    const lines = document.querySelectorAll('.line');
+    lines.forEach((line, index) => {
+      line.style.animationDelay = `${index * 1.2}s`; // Ajuste del tiempo de animación para más fluidez
+      line.classList.add('typewriter');
+    });
+  </script>
+</body>
+</html>

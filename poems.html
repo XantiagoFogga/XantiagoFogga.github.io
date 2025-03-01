@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Poema para Ti</title>
+  <link rel="stylesheet" href="poems.css">
+</head>
+<body>
+  <header>
+    <h1>Entre Distancias y Amaneceres</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">Inicio</a></li>
+        <li><a href="reasons.html">Por que?</a></li>
+        <li><a href="letter.html">Carta</a></li>
+        <li><a href="poems.html">Poemas</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="poem-container">
+      <!-- Estrofa 1 -->
+      <div class="stanza">
+        <p class="line">En el silencio de la noche, tu recuerdo es mi faro,</p>
+        <p class="line">donde cada estrella murmura promesas de un futuro distinto.</p>
+        <p class="line">El eco de tus palabras rompe la lejanía del espacio,</p>
+        <p class="line">y mi alma anhela abrazarte sin temores ni reservas.</p>
+      </div>
+      <!-- Estrofa 2 -->
+      <div class="stanza">
+        <p class="line">Cada mensaje tuyo es un suspiro que enciende mi ser,</p>
+        <p class="line">una caricia invisible que renueva mi existir.</p>
+        <p class="line">Tus letras viajan sin fronteras, llevando el calor de tu voz,</p>
+        <p class="line">y en cada rayo de luz se oculta el latido de un amor sincero.</p>
+      </div>
+      <!-- Estrofa 3 -->
+      <div class="stanza">
+        <p class="line">Imagino un mañana en que las distancias se desvanezcan,</p>
+        <p class="line">donde el tiempo se detenga y nuestras almas se fundan en un solo latir.</p>
+        <p class="line">La brisa del amanecer me cuenta historias de un reencuentro anhelado,</p>
+        <p class="line">y el destino se inclina ante el poder de este sentimiento tan profundo.</p>
+      </div>
+      <!-- Estrofa 4 -->
+      <div class="stanza">
+        <p class="line">Traspasaré mares y montañas sin temor a lo desconocido,</p>
+        <p class="line">cada kilómetro es un paso firme hacia el sueño compartido.</p>
+        <p class="line">El universo conspira para unir dos caminos errantes,</p>
+        <p class="line">convirtiendo cada obstáculo en un puente de luz y esperanza.</p>
+      </div>
+      <!-- Estrofa 5 -->
+      <div class="stanza">
+        <p class="line">Despierto anhelando la visión de tu rostro, un lienzo de ternura,</p>
+        <p class="line">donde la aurora dibuja la belleza de tu ser sin artificio.</p>
+        <p class="line">Mis ojos buscan en cada nuevo día la imagen viva de tu esencia,</p>
+        <p class="line">un sueño tangible que se renueva con cada latido de mi corazón.</p>
+      </div>
+      <!-- Estrofa 6 -->
+      <div class="stanza">
+        <p class="line">Construiré un refugio en cada verso que te dedico,</p>
+        <p class="line">un hogar tejido de esperanzas y de promesas sinceras.</p>
+        <p class="line">Las sombras se disipan ante el fulgor de tu sonrisa encantada,</p>
+        <p class="line">y cada instante a tu lado se convierte en un soplo de eternidad.</p>
+      </div>
+      <!-- Estrofa 7 -->
+      <div class="stanza">
+        <p class="line">En el entramado de mi vida, tu presencia es hilo de luz,</p>
+        <p class="line">que entrelaza mis días y los llena de un sentido inigualable.</p>
+        <p class="line">No hay sacrificio ni distancia que pueda apagar esta llama,</p>
+        <p class="line">porque en tu amor encuentro la paz que cura todas mis heridas.</p>
+      </div>
+      <!-- Estrofa 8 -->
+      <div class="stanza">
+        <p class="line">Hoy te entrego cada sueño, cada suspiro y cada emoción,</p>
+        <p class="line">una promesa indeleble que mora en lo más profundo de mi ser.</p>
+        <p class="line">Juntos seremos la melodía que desafía cualquier realidad,</p>
+        <p class="line">un canto de amor eterno que se escribe sin límites ni final.</p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Mi Amor para Ti</p>
+  </footer>
+  <script>
+    // Se aplica el efecto de máquina de escribir a cada línea
+    const lines = document.querySelectorAll('.line');
+    lines.forEach((line, index) => {
+      // Ajustamos el delay escalonado para que el efecto se note en cada línea
+      line.style.animationDelay = `${index * 0.8}s`;
+      line.classList.add('typewriter');
+    });
+  </script>
+</body>
+</html>

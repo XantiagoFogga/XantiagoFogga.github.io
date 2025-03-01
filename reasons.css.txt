@@ -1,0 +1,119 @@
+/* reasons.css */
+
+/* Fondo animado con degradado y efecto hue-rotate */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+  animation: backgroundAnimation 10s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+  0% { filter: hue-rotate(0deg); }
+  100% { filter: hue-rotate(360deg); }
+}
+
+/* Encabezado con sombra y efecto de transparencia */
+header {
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 1.5em;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.8em;
+  color: #d6336c;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Menú de navegación */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5em 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #d6336c;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #a62647;
+}
+
+/* Contenedor principal con fondo semitransparente y bordes redondeados */
+main {
+  padding: 2em;
+  max-width: 1000px;
+  margin: 2em auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.reasons-container {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+/* Cada razón extendida */
+.reason-item {
+  background: #fff;
+  padding: 1.5em;
+  border-left: 5px solid #ff6b81;
+  border-radius: 8px;
+  font-size: 1.1em;
+  color: #333;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideUp 0.8s forwards;
+}
+
+/* Efecto escalonado para cada razón */
+.reason-item:nth-child(1) { animation-delay: 0.2s; }
+.reason-item:nth-child(2) { animation-delay: 0.4s; }
+.reason-item:nth-child(3) { animation-delay: 0.6s; }
+.reason-item:nth-child(4) { animation-delay: 0.8s; }
+.reason-item:nth-child(5) { animation-delay: 1s; }
+.reason-item:nth-child(6) { animation-delay: 1.2s; }
+.reason-item:nth-child(7) { animation-delay: 1.4s; }
+.reason-item:nth-child(8) { animation-delay: 1.6s; }
+.reason-item:nth-child(9) { animation-delay: 1.8s; }
+.reason-item:nth-child(10) { animation-delay: 2s; }
+.reason-item:nth-child(11) { animation-delay: 2.2s; }
+.reason-item:nth-child(12) { animation-delay: 2.4s; }
+
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efecto hover: ligero escalado y cambio en el fondo */
+.reason-item:hover {
+  background: #ffecf0;
+  transform: scale(1.02);
+  transition: transform 0.3s, background 0.3s;
+}
+
+/* Pie de página */
+footer {
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 1em;
+  position: sticky;
+  bottom: 0;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+}
